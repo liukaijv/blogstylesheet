@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+$color: #333;
+$font-size: 14px;
+$line-height: 1.8;
+$link-color: #1abc9c;
+$font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+$gutter: 1.2em;
+
+html {
+  color: $color;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+body, button, input, select, textarea {
+  font: 300 #{$font-size}/#{$line-height} #{$font-family};
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+blockquote {
+  position: relative;
+  color: #999;
+  font-weight: 400;
+  border-left: 2px solid $link-color;
+  padding-left: 1em;
+  margin: $gutter 0;
+}
+
+acronym, abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+
+abbr {
+  cursor: help;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 400;
+}
+
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+:root sub, :root sup {
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ins, a {
+  text-decoration: none;
+}
+
+a,
+code {
+  color: $link-color;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+u {
+  text-decoration: underline;
+}
+
+mark {
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px;
+}
+
+pre, code, pre tt {
+  font-family: Courier, 'Courier New', monospace;
+}
+
+pre {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1em 1.5em;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  white-space: pre-wrap;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 0.8em;
+  height: 10px;
+}
+
+small,
+figcaption {
+  font-size: 0.9em;
+  color: #888;
+}
+
+strong, b {
+  font-weight: bold;
+  color: #000;
+}
+
+[draggable] {
+  cursor: move;
+}
+
+p, pre, ul, ol, dl, form, hr, table, blockquote {
+  margin-bottom: $gutter
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  font-weight: 100;
+  color: #000;
+  margin-top: $gutter;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+}
+
+h1, {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5, h6 {
+  font-size: 1.2em;
+}
+
+p:first-child,
+h1:first-child,
+h2:first-child {
+  margin-top: 0;
+}
+
+ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+
+li ul, li ol {
+  margin-bottom: 0;
+  margin-left: 2em;
+}
+
+li ul {
+  list-style: circle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th, table td, table caption {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #666;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+table th {
+  background: #fbfbfb;
+}
+
+table thead th {
+  background: #f1f1f1;
+}
+
+table caption {
+  border-bottom: none;
+}
+
+input, button, textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+em, legend, caption {
+  color: #000;
+  font-weight: inherit;
+}
+
+em {
+  position: relative;
+}
+
+em:after {
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  content: "・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・";
+}
+
+fieldset, img {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
